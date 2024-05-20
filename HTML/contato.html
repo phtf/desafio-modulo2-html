@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template - Utilizar como modelo</title>
     <link rel="stylesheet" href="../css/base.css">
+    <style>
+        #assunto{
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -25,9 +30,48 @@
             </div>
     
             <div class="content">
-                Content
-                <!-- Aqui vai o seu conteúdo -->
-                fixa de cadastro
+                <h2>Entre em contato</h2>
+                <p>Para mais informações entre em contato</p>
+                <div>
+                    <Span><strong>Telefone:</strong> +55 11 999999999</Span> <br>
+                    <span><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade - Estado</span><br>
+                    <h3>Localização:</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d117062.4575194931!2d-46.62926788877169!3d-23.52524331432946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1spt-BR!2sbr!4v1716168176037!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <h3>Faça já o seu agendamento</h3>
+                    <fieldset>
+                        <legend>Preencha os dados para o agendamento</legend>
+                        <form action="post">
+                            <span>Nome: </span><input type="text" name="nome" id="nome" >
+                            <span>E-mail: </span><input type="email" name="e-mail" id="e-mail">
+                            <span>Agendamento: </span> <input type="date" name="agend" id="agend"> 
+                            <br>
+                            <br>
+                            <div>Especialidade: </div> 
+                            <input type="radio" id="opcao1" name="opcao" value="Pediatria">
+                            <label for="Pediatria">Pediatria</label><br>
+                    
+                            <input type="radio" id="opcao2" name="opcao" value="Nutricionista">
+                            <label for="Nutricionista">Nutricionista</label><br>
+                    
+                            <input type="radio" id="opcao3" name="opcao" value="Psicologia">
+                            <label for="Psicologia">Psicologia</label><br>
+
+                            <input type="radio" id="opcao4" name="opcao" value="Neurocirugião">
+                            <label for="Neurocirugião">Neurocirugião</label><br>
+                            <br>
+                            <span>Assunto</span>
+                            <br><input type="text" name="assunto" id="assunto">
+                            <br>
+                            <br>
+                            <textarea name="Case" id="case" width="300"rows="10" cols="100">Descreva o que sente é o agendamento</textarea>
+                            <br>
+                            <button type="button" width="100px">Enviar</button>
+                            <button type="reset" width="100px">Limpar</button>
+                        </form>
+                    </fieldset>
+                </div>
             </div>
     
             <div class="footer">
