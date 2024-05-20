@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template - Utilizar como modelo</title>
     <link rel="stylesheet" href="../css/base.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 2px solid black; /* Borda da tabela */
+        }
+        td {
+            border: 1px black solid;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -21,15 +32,79 @@
 
         <div class="main">
             <div class="header">
-                Header
-                <!-- Aqui vai o seu header -->
-                imagem
+                <img src="../Imagem/logo.png" alt="logo">
             </div>
     
             <div class="content">
-                Content
-                <!-- Aqui vai o seu conteúdo -->
-                fixa de cadastro
+                <h1>Horarios de atendimento</h1>
+                <p>A clínica Pediatrix tem o prazer de oferecer uma ampla gama de horários de atendimento para atender às necessidades de todas as famílias. Nossos horários flexíveis garantem que você possa agendar consultas de acordo com sua conveniência, seja de manhã cedo, durante o dia ou à noite.</p>
+                <table>
+                    <thead style="background-color: gray;">
+                        <tr>
+                            <th><font color="white">Serviço</font></th>
+                            <th><font color="white">Segunda a Sexta</font></th>
+                            <th><font color="white">Sabado</font></th>
+                            <th><font color="white">feriado</font></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Nutricionista</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Neurocirugião</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>
+                    <h3>Agendamento</h3>
+                    <p>Assim que você preencher os dados iremos entrar em contato com você por e-mail, só marcar o dia que confirmaremos por e-mail</p>
+                    <fieldset>
+                        <legend>Preencha os dados para o agendamento</legend>
+                        <form action="post">
+                            <span>Nome: </span><input type="text" name="nome" id="nome" >
+                            <span>E-mail: </span><input type="email" name="e-mail" id="e-mail">
+                            <span>Agendamento: </span> <input type="date" name="agend" id="agend"> 
+                            <br>
+                            <br>
+                            <div>Especialidade: </div> 
+                            <input type="radio" id="opcao1" name="opcao" value="Pediatria">
+                            <label for="Pediatria">Pediatria</label><br>
+                    
+                            <input type="radio" id="opcao2" name="opcao" value="Nutricionista">
+                            <label for="Nutricionista">Nutricionista</label><br>
+                    
+                            <input type="radio" id="opcao3" name="opcao" value="Psicologia">
+                            <label for="Psicologia">Psicologia</label><br>
+
+                            <input type="radio" id="opcao4" name="opcao" value="Neurocirugião">
+                            <label for="Neurocirugião">Neurocirugião</label><br>
+                            <br>
+                            <textarea name="Case" id="case" width="300"rows="10" cols="100">Descreva o que sente é o agendamento</textarea>
+                            <br>
+                            <button type="button" width="100px">Enviar</button>
+                        </form>
+                    </fieldset>
+                </div>
             </div>
     
             <div class="footer">
